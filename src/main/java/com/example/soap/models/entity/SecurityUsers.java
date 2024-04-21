@@ -51,19 +51,19 @@ public class SecurityUsers extends SecurityUsersAddons{
     private String glncomment;
 
     @XmlElementWrapper(name = "partyCollection")
-    @XmlElement(name = "Party")
+    @XmlElement(name = "party")
     private List<Party> partyCollection;
 
     @XmlElementWrapper(name = "userpoolsCollection")
-    @XmlElement(name = "UserPools")
+    @XmlElement(name = "userPools")
     private List<UserPools> userpoolsCollection;
 
     @XmlElementWrapper(name = "securityauthoritiesCollection")
-    @XmlElement(name = "SecurityAuthorities")
+    @XmlElement(name = "securityAuthorities")
     private List<SecurityAuthorities> securityauthoritiesCollection;
 
     @XmlElementWrapper(name = "poolsCollection")
-    @XmlElement(name = "Pools")
+    @XmlElement(name = "pools")
     private List<Pools> poolsCollection;
 
 }

@@ -1,12 +1,12 @@
 package com.example.soap.models.entity;
 import java.math.BigDecimal;
+import java.util.List;
 
-import javax.xml.bind.annotation.XmlAccessType;
-        import javax.xml.bind.annotation.XmlAccessorType;
-        import javax.xml.bind.annotation.XmlElement;
-        import javax.xml.bind.annotation.XmlRootElement;
-        import javax.xml.bind.annotation.XmlType;
-        import lombok.Data;
+import javax.xml.bind.annotation.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -17,6 +17,8 @@ import javax.xml.bind.annotation.XmlAccessType;
         "gln"
 })
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Contact {
     @XmlElement(name = "contactid")
     private BigDecimal contactid;
@@ -24,7 +26,8 @@ public class Contact {
     @XmlElement(name = "personordepartmentname")
     private String personordepartmentname;
 
-    @XmlElement(name = "communicaionchannelCollection")
+    @XmlElementWrapper(name = "communicaionchannelCollection")
+    @XmlElement(name = "communicaionchannel")
     private List<CommunicaionChannel> communicaionchannelCollection;
 
     @XmlElement(name = "gln")

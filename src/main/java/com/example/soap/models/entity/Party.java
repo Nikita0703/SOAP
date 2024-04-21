@@ -36,7 +36,7 @@ import lombok.NoArgsConstructor;
         "alternatepartyidentificationCollection",
         "quotaimport",
         "partyrolesCollection",
-        "bankaccountsCollection",
+        "bankAccountsCollection",
         "legalNameCollection",
         "contactnameCollection",
         "chiefnameCollection",
@@ -98,7 +98,7 @@ public class Party {
 
     @XmlElementWrapper(name = "bankaccountsCollection")
     @XmlElement(name = "bankaccounts")
-    private List<bankaccounts> bankaccountsCollection;
+    private List<BankAccounts> bankAccountsCollection;
 
     @XmlElementWrapper(name = "legalNameCollection")
     @XmlElement(name = "legalName")

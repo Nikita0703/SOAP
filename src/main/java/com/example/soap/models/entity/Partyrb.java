@@ -6,7 +6,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PartyRB", propOrder = {
@@ -29,6 +32,9 @@ import lombok.Data;
         "website",
         "party"
 })
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Partyrb {
     @XmlElement(name = "gln")
     private Long gln;

@@ -48,4 +48,4 @@ public class Quotaimport {
     @XmlElement(name = "party")
     private Party party;
 }
-}
+

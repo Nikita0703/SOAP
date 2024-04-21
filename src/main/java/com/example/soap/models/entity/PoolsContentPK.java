@@ -11,19 +11,18 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(name = "city", propOrder = {
-        "cityPK",
-        "city",
-        "party"}
+@XmlType(name = "poolscontent", propOrder = {
+        "name",
+        "globaltradeitemnumber",
+        "username"}
 )
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class City {
+public class PoolsContentPK {
+    private String name;
+    private Long globaltradeitemnumber;
+    private String username;
 
-    private CityPK cityPK;
 
-    private String city;
-
-    private Party party;
 }

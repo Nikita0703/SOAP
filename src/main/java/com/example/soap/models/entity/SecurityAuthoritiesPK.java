@@ -11,19 +11,15 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(name = "city", propOrder = {
-        "cityPK",
-        "city",
-        "party"}
-)
+@XmlType(name = "securityauthoritiesPK", propOrder = {
+        "username",
+        "authority"
+})
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class City {
+public class SecurityAuthoritiesPK extends SecurityAuthoritiesAddons{
+    private String username;
+    private String authority;
 
-    private CityPK cityPK;
-
-    private String city;
-
-    private Party party;
 }

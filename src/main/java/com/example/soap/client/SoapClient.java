@@ -1,7 +1,9 @@
 package com.example.soap.client;
 
+import com.example.soap.models.requests.GetFullPartyByGLNReq;
 import com.example.soap.models.requests.SearchPartiesByModifiedTimeReq;
 import com.example.soap.models.requests.SearchSimpleTraiditemsByModifiedTimeReq;
+import com.example.soap.models.responses.GetFullPartyByGLNResp;
 import com.example.soap.models.responses.SearchPartiesByModifiedTimeResp;
 import com.example.soap.models.responses.SearchSimpleTradeItemsByModifiedTimeResp;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +30,13 @@ public class SoapClient {
         SearchSimpleTradeItemsByModifiedTimeResp acknowledgement = (SearchSimpleTradeItemsByModifiedTimeResp) template.marshalSendAndReceive(
                                                                "http://www.epass.by:80/BEPTGlobalService",
                                                                     req);
+        return acknowledgement;
+    }
+
+    public GetFullPartyByGLNResp getFullPartyByGLN(GetFullPartyByGLNReq req){
+        GetFullPartyByGLNResp acknowledgement = (GetFullPartyByGLNResp) template.marshalSendAndReceive(
+                "http://www.epass.by:80/BEPTGlobalService",
+                req);
         return acknowledgement;
     }
 

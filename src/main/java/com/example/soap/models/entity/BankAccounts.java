@@ -1,9 +1,12 @@
 package com.example.soap.models.entity;
 import javax.xml.bind.annotation.*;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -17,7 +20,9 @@ import java.math.BigDecimal;
         "gln"
 })
 @Data
-public class bankaccounts extends Banks{
+@AllArgsConstructor
+@NoArgsConstructor
+public class BankAccounts extends Banks{
 
         @XmlElement(name = "accountId")
         private BigDecimal accountId;

@@ -1,5 +1,9 @@
 package com.example.soap.models.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -11,7 +15,10 @@ import javax.xml.bind.annotation.XmlType;
         "partyrolesPK",
         "party"}
 )
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class partyroles {
-    private partyrolesPK partyrolesPK;
+    private PartyrolesPK partyrolesPK;
     private Party party;
 }
