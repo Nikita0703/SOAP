@@ -1,5 +1,7 @@
 package com.example.soap.client;
 
+import com.example.soap.models.login.Login;
+import com.example.soap.models.login.LoginResponse;
 import com.example.soap.models.requests.GetFullPartyByGLNReq;
 import com.example.soap.models.requests.SearchPartiesByModifiedTimeReq;
 import com.example.soap.models.requests.SearchSimpleTraiditemsByModifiedTimeReq;
@@ -35,6 +37,13 @@ public class SoapClient {
 
     public GetFullPartyByGLNResp getFullPartyByGLN(GetFullPartyByGLNReq req){
         GetFullPartyByGLNResp acknowledgement = (GetFullPartyByGLNResp) template.marshalSendAndReceive(
+                "http://www.epass.by:80/BEPTGlobalService",
+                req);
+        return acknowledgement;
+    }
+
+    public LoginResponse Login(Login req){
+        LoginResponse acknowledgement = (LoginResponse) template.marshalSendAndReceive(
                 "http://www.epass.by:80/BEPTGlobalService",
                 req);
         return acknowledgement;

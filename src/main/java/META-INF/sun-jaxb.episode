@@ -38,5 +38,13 @@ Generated on: 2019.06.23 at 08:27:00 PM IST
       <class ref="com.example.soap.models.responses.GetFullPartyByGLNResp"/>
     </bindings>
 
+    <bindings if-exists="true" scd="tns:Login">
+       <class ref="com.example.soap.models.login.Login"/>
+    </bindings>
+
+    <bindings if-exists="true" scd="tns:LoginResponse">
+       <class ref="com.example.soap.models.login.LoginResponse"/>
+    </bindings
+
   </bindings>
 </bindings>

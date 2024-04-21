@@ -12,9 +12,9 @@ public enum GetFullPartyByGLNEnum {
     OK,
 
     @XmlEnumValue("INVALID_GLN")
-    INVALID_FROMDATE,
+    INVALID_GLN,
 
     @XmlEnumValue("GLN_NOT_EXIST")
-    INVALID_TODATE,
+    GLN_NOT_EXISTS,
 
 }
