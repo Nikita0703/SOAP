@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "SearchPartiesByModifiedTimeResp")
+@XmlRootElement(name = "searchPartiesByModifiedTimeResp")
 @XmlType(propOrder = {
         "errorCode",
         "header",

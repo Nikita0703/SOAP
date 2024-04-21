@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "GetFullPartyByGLNReq")
+@XmlRootElement(name = "getFullPartyByGLNReq")
 @XmlType(propOrder = {
         "gln",
         "header"

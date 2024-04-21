@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement
-@XmlType(name = "LoginResponse")
+@XmlRootElement(name = "LoginResponse")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

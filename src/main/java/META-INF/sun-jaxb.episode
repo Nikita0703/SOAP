@@ -14,28 +14,28 @@ Generated on: 2019.06.23 at 08:27:00 PM IST
       <package name="com.example.soap.models"/>
     </schemaBindings>
 
-    <bindings if-exists="true" scd="tns:SearchPartiesByModifiedReq">
-      <class ref="com.example.soap.models.requests.SearchPartiesByModifiedReq"/>
+    <bindings if-exists="true" scd="tns:SearchPartiesByModifiedTime">
+      <class ref="com.example.soap.models.requests.SearchPartiesByModifiedTime"/>
     </bindings>
 
-    <bindings if-exists="true" scd="tns:SearchPartiesByModifiedResp">
-      <class ref="com.example.soap.models.responses.SearchPartiesByModifiedResp"/>
+    <bindings if-exists="true" scd="tns:SearchPartiesByModifiedTime">
+      <class ref="com.example.soap.models.responses.SearchPartiesByModifiedTimeResponse"/>
     </bindings>
 
-    <bindings if-exists="true" scd="tns:SearchSimpleTraideitemsByModifiedTimeReq">
-      <class ref="com.example.soap.models.requests.SearchSimpleTraiditemsByModifiedTimeReq"/>
+    <bindings if-exists="true" scd="tns:SearchSimpleTraideitemsByModifiedTime">
+      <class ref="com.example.soap.models.requests.SearchSimpleTraiditemsByModifiedTime"/>
     </bindings>
 
-    <bindings if-exists="true" scd="tns:SearchSimpleTraideitemsByModifiedTimeResp">
-      <class ref="com.example.soap.models.responses.SearchSimpleTraiditemsByModifiedTimeResp"/>
+    <bindings if-exists="true" scd="tns:SearchSimpleTraideitemsByModifiedTimeResponse">
+      <class ref="com.example.soap.models.responses.SearchSimpleTraiditemsByModifiedTimeResponse"/>
     </bindings>
 
-    <bindings if-exists="true" scd="tns:GetFullPartyByGLNReq">
-      <class ref="com.example.soap.models.requests.GetFullPartyByGLNReq"/>
+    <bindings if-exists="true" scd="tns:GetFullPartyByGLN">
+      <class ref="com.example.soap.models.requests.GetFullPartyByGLN"/>
     </bindings>
 
-    <bindings if-exists="true" scd="tns:GetFullPartyByGLNResp">
-      <class ref="com.example.soap.models.responses.GetFullPartyByGLNResp"/>
+    <bindings if-exists="true" scd="tns:GetFullPartyByGLNResponse">
+      <class ref="com.example.soap.models.responses.GetFullPartyByGLNResponse"/>
     </bindings>
 
     <bindings if-exists="true" scd="tns:Login">

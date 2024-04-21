@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "GetFullPartyByGLNResp")
+@XmlRootElement(name = "getFullPartyByGLNResp")
 @XmlType(propOrder = {
         "errorCode",
         "fullparty",
