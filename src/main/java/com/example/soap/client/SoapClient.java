@@ -37,15 +37,15 @@ public class SoapClient {
 
     public GetFullPartyByGLNResp getFullPartyByGLN(GetFullPartyByGLNReq req){
         GetFullPartyByGLNResp acknowledgement = (GetFullPartyByGLNResp) template.marshalSendAndReceive(
-                "http://www.epass.by:80/BEPTGlobalService",
-                req);
+                                            "http://www.epass.by:80/BEPTGlobalService",
+                                                 req);
         return acknowledgement;
     }
 
     public LoginResponse Login(Login req){
         LoginResponse acknowledgement = (LoginResponse) template.marshalSendAndReceive(
-                "http://www.epass.by:80/BEPTGlobalService",
-                req);
+                                    "http://www.epass.by:80/BEPTGlobalService",
+                                         req);
         return acknowledgement;
     }
 
