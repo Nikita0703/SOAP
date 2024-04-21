@@ -38,8 +38,5 @@ Generated on: 2019.06.23 at 08:27:00 PM IST
       <class ref="com.example.soap.models.responses.GetFullPartyByGLNResp"/>
     </bindings>
 
-
-
-
   </bindings>
 </bindings>

@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "QuotaImport", propOrder = {
+@XmlType(name = "quotaimport", propOrder = {
         "gln",
         "quota",
         "restquota",

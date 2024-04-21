@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(name = "poolscontent", propOrder = {
+@XmlType(name = "poolscontentPK", propOrder = {
         "name",
         "globaltradeitemnumber",
         "username"}
